@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+
+  <body class="bg-purple-200">
+    <div class="container mt-48 mx-auto text-left max-w-3xl">
+      <h1 class="text-6xl my-6 font-medium">Number Guessing Game</h1>
+      <div id="game" class="mt-12 text-lg">
+        <p class="text-xl">
+          Guess a number random between <input type="number" id="min-num" class="w-16"/> and
+          <input type="number" id="max-num" class="w-16 disabled:bg-red-500"/>
+        </p>
+        <p id="guesses" class="text-m text-red-600 mb-8"></p>
+
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Enter your guess"
+          class="
+            mt-4
+            bg-white
+            text-black
+            py-2
+            px-4
+            text-xl
+            placeholder-indigo-900
+            rounded
+          "
+        />
+
+        <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="
+            mt-4
+            bg-purple-700
+            hover:bg-purple-400
+            text-white
+            px-4
+            py-2
+            text-xl
+            rounded
+          "
+        />
+
+        <input
+          type="submit"
+          value="Reset"
+          id="reset-btn"
+          class="
+            mt-4
+            bg-purple-600
+            hover:bg-purple-400
+            text-white
+            px-4
+            py-2
+            text-xl
+            rounded
+          "
+        />
+        <p id="message" class="mt-4 text-xl"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
