@@ -1,0 +1,21 @@
+{
+  "name": "numberguesser",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/style.css -o ./dist/style.css",
+    "build:css": "postcss src/style.css -o dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "description": ""
+}
